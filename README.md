@@ -5,8 +5,10 @@ This repo contains some personal utilities to do quick things. Currently we have
 
 # Get started
 
+First you need to run `pip install costa_utils`.
 
-Visualizing a HF SFT dataset:
+
+Visualizing an HF SFT dataset:
 
 ```bash
 # visualizing https://huggingface.co/datasets/allenai/tulu-v2-sft-mixture
@@ -23,7 +25,7 @@ python -m costa_utils.hf_viz \
 | ![](static/sft_hf.png)      | ![](static/sft.png)       |
 
 
-Visualizing a HF preference dataset:
+Visualizing an HF preference dataset:
 
 ```bash
 # visualizing https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized
