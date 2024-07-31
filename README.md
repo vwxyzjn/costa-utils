@@ -16,11 +16,11 @@ python -m costa_utils.hf_viz \
     --sft_messages_column_name messages
 ```
 
-![](static/sft.png)
 
-which is a bit easier to read than
 
-![](static/sft_hf.png)
+| Before      | After |
+| ----------- | ----------- |
+| ![](static/sft_hf.png)      | ![](static/sft.png)       |
 
 
 Visualizing a HF preference dataset:
@@ -34,11 +34,11 @@ python -m costa_utils.hf_viz \
     --preference_rejected_column_name rejected
 ```
 
-![](static/pref.png)
 
-which is a bit easier to read than
 
-![](static/pref_hf.png)
+| Before      | After |
+| ----------- | ----------- |
+| ![](static/pref_hf.png)     | ![](static/pref.png)      |
 
 
 
@@ -53,8 +53,15 @@ python -m costa_utils.hf_viz \
     --markdown
 ```
 
-![alt text](<static/math_and_code_markdown.png>)
-![alt text](<static/math_and_code_hf.png>)
+
+
+
+
+| Before      | After |
+| ----------- | ----------- |
+| ![](<static/math_and_code_hf.png>)   | ![](<static/math_and_code_markdown.png>)      |
+
+
 
 
 
