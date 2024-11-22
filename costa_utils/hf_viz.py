@@ -70,20 +70,20 @@ class Args:
 
 def print_all_sft_dataset(dataset_name: str, split: str, sft_messages_column_name: str, markdown: bool) -> None:
     """visualize the SFT dataset."""
-    ds = load_dataset(dataset_name)
+    ds = load_dataset(dataset_name, split=split)
     i = 0
     while True:
-        print_hf_messages(ds[split][i][sft_messages_column_name], markdown)
+        print_hf_messages(ds[i][sft_messages_column_name], markdown)
         i += 1
         input("Press Enter to continue...")
 
 
 def print_all_preference_dataset(dataset_name: str, split: str, preference_chosen_column_name: str, preference_rejected_column_name: str, markdown: bool) -> None:
     """visualize the preference dataset."""
-    ds = load_dataset(dataset_name)
+    ds = load_dataset(dataset_name, split=split)
     i = 0
     while True:
-        print_hf_chosen_rejected(ds[split][i][preference_chosen_column_name], ds[split][i][preference_rejected_column_name], markdown)
+        print_hf_chosen_rejected(ds[i][preference_chosen_column_name], ds[i][preference_rejected_column_name], markdown)
         i += 1
         input("Press Enter to continue...")
 
