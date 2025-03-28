@@ -1,17 +1,11 @@
-[tool.poetry]
+[project]
 name = "costa-utils"
-version = "0.1.1"
-description = ""
-authors = ["Costa Huang"]
+version = "0.1.0"
+description = "Add your description here"
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = ">=3.9,<4.0"
-datasets = "^2.20.0"
-tyro = "^0.8.5"
-rich = "^13.7.1"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.13"
+dependencies = [
+    "datasets>=3.5.0",
+    "rich>=13.9.4",
+    "tyro>=0.9.18",
+]
